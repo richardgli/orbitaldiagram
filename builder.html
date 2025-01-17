@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builder | Orbitals</title>
+    <link rel="stylesheet" href="css/builder.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><div class="back"><p>Back</p></div></a>
+    </header>
+
+    <main>
+
+        <!-- Periodic Table -->
+        <div class="periodic-table">
+            <div class="element" data-element="Hydrogen"><p>H</p><h4>1</h4></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="element" data-element="Helium"><p>He</p><h4>2</h4></div>
+            <div class="element" data-element="Lithium"><p>Li</p><h4>3</h4></div>
+            <div class="element" data-element="Beryllium"><p>Be</p><h4>4</h4></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="element" data-element="Boron"><p>B</p><h4>5</h4></div>
+            <div class="element" data-element="Carbon"><p>C</p><h4>6</h4></div>
+            <div class="element" data-element="Nitrogen"><p>N</p><h4>7</h4></div>
+            <div class="element" data-element="Oxygen"><p>O</p><h4>8</h4></div>
+            <div class="element" data-element="Fluorine"><p>F</p><h4>9</h4></div>
+            <div class="element" data-element="Neon"><p>Ne</p><h4>10</h4></div>
+            <div class="element" data-element="Sodium"><p>Na</p><h4>11</h4></div>
+            <div class="element" data-element="Magnesium"><p>Mg</p><h4>12</h4></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="element" data-element="Aluminum"><p>Al</p><h4>13</h4></div>
+            <div class="element" data-element="Silicon"><p>Si</p><h4>14</h4></div>
+            <div class="element" data-element="Phosphorus"><p>P</p><h4>15</h4></div>
+            <div class="element" data-element="Sulfur"><p>S</p><h4>16</h4></div>
+            <div class="element" data-element="Chlorine"><p>Cl</p><h4>17</h4></div>
+            <div class="element" data-element="Argon"><p>Ar</p><h4>18</h4></div>
+            <div class="element" data-element="Potassium"><p>K</p><h4>19</h4></div>
+            <div class="element" data-element="Calcium"><p>Ca</p><h4>20</h4></div>
+            <div class="element" data-element="Scandium"><p>Sc</p><h4>21</h4></div>
+            <div class="element" data-element="Titanium"><p>Ti</p><h4>22</h4></div>
+            <div class="element" data-element="Vanadium"><p>V</p><h4>23</h4></div>
+            <div class="element" data-element="Chromium"><p>Cr</p><h4>24</h4></div>
+            <div class="element" data-element="Manganese"><p>Mn</p><h4>25</h4></div>
+            <div class="element" data-element="Iron"><p>Fe</p><h4>26</h4></div>
+            <div class="element" data-element="Cobalt"><p>Co</p><h4>27</h4></div>
+            <div class="element" data-element="Nickel"><p>Ni</p><h4>28</h4></div>
+            <div class="element" data-element="Copper"><p>Cu</p><h4>29</h4></div>
+            <div class="element" data-element="Zinc"><p>Zn</p><h4>30</h4></div>
+            <div class="element" data-element="Gallium"><p>Ga</p><h4>31</h4></div>
+            <div class="element" data-element="Germanium"><p>Ge</p><h4>32</h4></div>
+            <div class="element" data-element="Arsenic"><p>As</p><h4>33</h4></div>
+            <div class="element" data-element="Selenium"><p>Se</p><h4>34</h4></div>
+            <div class="element" data-element="Bromine"><p>Br</p><h4>35</h4></div>
+            <div class="element" data-element="Krypton"><p>Kr</p><h4>36</h4></div>
+            <div class="element" data-element="Rubidium"><p>Rb</p><h4>37</h4></div>
+            <div class="element" data-element="Strontium"><p>Sr</p><h4>38</h4></div>
+            <div class="element" data-element="Yttrium"><p>Y</p><h4>39</h4></div>
+            <div class="element" data-element="Zirconium"><p>Zr</p><h4>40</h4></div>
+            <div class="element" data-element="Niobium"><p>Nb</p><h4>41</h4></div>
+            <div class="element" data-element="Molybdenum"><p>Mo</p><h4>42</h4></div>
+            <div class="element" data-element="Technetium"><p>Tc</p><h4>43</h4></div>
+            <div class="element" data-element="Ruthenium"><p>Ru</p><h4>44</h4></div>
+            <div class="element" data-element="Rhodium"><p>Rh</p><h4>45</h4></div>
+            <div class="element" data-element="Palladium"><p>Pd</p><h4>46</h4></div>
+            <div class="element" data-element="Silver"><p>Ag</p><h4>47</h4></div>
+            <div class="element" data-element="Cadmium"><p>Cd</p><h4>48</h4></div>
+            <div class="element" data-element="Indium"><p>In</p><h4>49</h4></div>
+            <div class="element" data-element="Tin"><p>Sn</p><h4>50</h4></div>
+            <div class="element" data-element="Antimony"><p>Sb</p><h4>51</h4></div>
+            <div class="element" data-element="Tellurium"><p>Te</p><h4>52</h4></div>
+            <div class="element" data-element="Iodine"><p>I</p><h4>53</h4></div>
+            <div class="element" data-element="Xenon"><p>Xe</p><h4>54</h4></div>
+            <div class="element" data-element="Cesium"><p>Cs</p><h4>55</h4></div>
+            <div class="element" data-element="Barium"><p>Ba</p><h4>56</h4></div>
+            <div class="empty-element"></div>
+            <div class="element" data-element="Hafnium"><p>Hf</p><h4>72</h4></div>
+            <div class="element" data-element="Tantalum"><p>Ta</p><h4>73</h4></div>
+            <div class="element" data-element="Tungsten"><p>W</p><h4>74</h4></div>
+            <div class="element" data-element="Rhenium"><p>Re</p><h4>75</h4></div>
+            <div class="element" data-element="Osmium"><p>Os</p><h4>76</h4></div>
+            <div class="element" data-element="Iridium"><p>Ir</p><h4>77</h4></div>
+            <div class="element" data-element="Platinum"><p>Pt</p><h4>78</h4></div>
+            <div class="element" data-element="Gold"><p>Au</p><h4>79</h4></div>
+            <div class="element" data-element="Mercury"><p>Hg</p><h4>80</h4></div>
+            <div class="element" data-element="Thallium"><p>Tl</p><h4>81</h4></div>
+            <div class="element" data-element="Lead"><p>Pb</p><h4>82</h4></div>
+            <div class="element" data-element="Bismuth"><p>Bi</p><h4>83</h4></div>
+            <div class="element" data-element="Polonium"><p>Po</p><h4>84</h4></div>
+            <div class="element" data-element="Astatine"><p>At</p><h4>85</h4></div>
+            <div class="element" data-element="Radon"><p>Rn</p><h4>86</h4></div>
+            <div class="element restricted"><p>Fr</p><h4>87</h4></div>
+            <div class="element restricted"><p>Ra</p><h4>88</h4></div>
+            <div class="empty-element"></div>
+            <div class="element restricted"><p>Rf</p><h4>104</h4></div>
+            <div class="element restricted"><p>Db</p><h4>105</h4></div>
+            <div class="element restricted"><p>Sb</p><h4>106</h4></div>
+            <div class="element restricted"><p>Bh</p><h4>107</h4></div>
+            <div class="element restricted"><p>Hs</p><h4>108</h4></div>
+            <div class="element restricted"><p>Mt</p><h4>109</h4></div>
+            <div class="element restricted"><p>Ds</p><h4>110</h4></div>
+            <div class="element restricted"><p>Rg</p><h4>111</h4></div>
+            <div class="element restricted"><p>Cn</p><h4>112</h4></div>
+            <div class="element restricted"><p>Nh</p><h4>113</h4></div>
+            <div class="element restricted"><p>Fl</p><h4>114</h4></div>
+            <div class="element restricted"><p>Mc</p><h4>115</h4></div>
+            <div class="element restricted"><p>Lv</p><h4>116</h4></div>
+            <div class="element restricted"><p>Ts</p><h4>117</h4></div>
+            <div class="element restricted"><p>Og</p><h4>118</h4></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="element" data-element="Lanthanum"><p>La</p><h4>57</h4></div>
+            <div class="element" data-element="Cerium"><p>Ce</p><h4>58</h4></div>
+            <div class="element" data-element="Praseodymium"><p>Pr</p><h4>59</h4></div>
+            <div class="element" data-element="Neodymium"><p>Nd</p><h4>60</h4></div>
+            <div class="element" data-element="Promethium"><p>Pm</p><h4>61</h4></div>
+            <div class="element" data-element="Samarium"><p>Sm</p><h4>62</h4></div>
+            <div class="element" data-element="Europium"><p>Eu</p><h4>63</h4></div>
+            <div class="element" data-element="Gadolinium"><p>Gd</p><h4>64</h4></div>
+            <div class="element" data-element="Terbium"><p>Tb</p><h4>65</h4></div>
+            <div class="element" data-element="Dysprosium"><p>Dy</p><h4>66</h4></div>
+            <div class="element" data-element="Holmium"><p>Ho</p><h4>67</h4></div>
+            <div class="element" data-element="Erbium"><p>Er</p><h4>68</h4></div>
+            <div class="element" data-element="Thulium"><p>Tm</p><h4>69</h4></div>
+            <div class="element" data-element="Ytterbium"><p>Yb</p><h4>70</h4></div>
+            <div class="element" data-element="Lutetium"><p>Lu</p><h4>71</h4></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="empty-element"></div>
+            <div class="element restricted"><p>Ac</p><h4>89</h4></div>
+            <div class="element restricted"><p>Th</p><h4>90</h4></div>
+            <div class="element restricted"><p>Pa</p><h4>91</h4></div>
+            <div class="element restricted"><p>U</p><h4>92</h4></div>
+            <div class="element restricted"><p>Np</p><h4>93</h4></div>
+            <div class="element restricted"><p>Pu</p><h4>94</h4></div>
+            <div class="element restricted"><p>Am</p><h4>95</h4></div>
+            <div class="element restricted"><p>Cm</p><h4>96</h4></div>
+            <div class="element restricted"><p>Bk</p><h4>97</h4></div>
+            <div class="element restricted"><p>Cf</p><h4>98</h4></div>
+            <div class="element restricted"><p>Es</p><h4>99</h4></div>
+            <div class="element restricted"><p>Fm</p><h4>100</h4></div>
+            <div class="element restricted"><p>Md</p><h4>101</h4></div>
+            <div class="element restricted"><p>No</p><h4>102</h4></div>
+            <div class="element restricted"><p>Lr</p><h4>103</h4></div>
+        </div>
+
+        <!-- Orbital Diagram -->
+        <div class="orbital-diagram">
+            <div class="empty-orbital"></div>
+            <div class="subshell-name" data-subshell-name="s"><p>s</p></div>
+            <div class="subshell-name" data-subshell-name="p"></div>
+            <div class="subshell-name" data-subshell-name="p"><p>p</p></div>
+            <div class="subshell-name" data-subshell-name="p"></div>
+            <div class="subshell-name" data-subshell-name="d"></div>
+            <div class="subshell-name" data-subshell-name="d"></div>
+            <div class="subshell-name" data-subshell-name="d"><p>d</p></div>
+            <div class="subshell-name" data-subshell-name="d"></div>
+            <div class="subshell-name" data-subshell-name="d"></div>
+            <div class="subshell-name" data-subshell-name="f"></div>
+            <div class="subshell-name" data-subshell-name="f"></div>
+            <div class="subshell-name" data-subshell-name="f"></div>
+            <div class="subshell-name" data-subshell-name="f"><p>f</p></div>
+            <div class="subshell-name" data-subshell-name="f"></div>
+            <div class="subshell-name" data-subshell-name="f"></div>
+            <div class="subshell-name" data-subshell-name="f"></div>
+            <div class="level-name" data-shell="6">6p</div>
+            <div class="empty-orbital"></div>
+            <div class="orbital" data-subshell="6p" data-orbital="6p1">
+                <div class="electron up-arrow" data-arrow="up-6p1">↑</div>
+                <div class="electron down-arrow" data-arrow="down-6p1">↓</div>
+            </div>
+            <div class="orbital" data-subshell="6p" data-orbital="6p2">
+                <div class="electron up-arrow" data-arrow="up-6p2">↑</div>
+                <div class="electron down-arrow" data-arrow="down-6p2">↓</div>
+            </div>
+            <div class="orbital" data-subshell="6p" data-orbital="6p3">
+                <div class="electron up-arrow" data-arrow="up-6p3">↑</div>
+                <div class="electron down-arrow" data-arrow="down-6p3">↓</div>
+            </div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="level-name" data-shell="5">5d</div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="orbital" data-subshell="5d" data-orbital="5d1">
+                <div class="electron up-arrow" data-arrow="up-5d1">↑</div>
+                <div class="electron down-arrow" data-arrow="down-5d1">↓</div>
+            </div>
+            <div class="orbital" data-subshell="5d" data-orbital="5d2">
+                <div class="electron up-arrow" data-arrow="up-5d2">↑</div>
+                <div class="electron down-arrow" data-arrow="down-5d2">↓</div>
+            </div>
+            <div class="orbital" data-subshell="5d" data-orbital="5d3">
+                <div class="electron up-arrow" data-arrow="up-5d3">↑</div>
+                <div class="electron down-arrow" data-arrow="down-5d3">↓</div>
+            </div>
+            <div class="orbital" data-subshell="5d" data-orbital="5d4">
+                <div class="electron up-arrow" data-arrow="up-5d4">↑</div>
+                <div class="electron down-arrow" data-arrow="down-5d4">↓</div>
+            </div>
+            <div class="orbital" data-subshell="5d" data-orbital="5d5">
+                <div class="electron up-arrow" data-arrow="up-5d5">↑</div>
+                <div class="electron down-arrow" data-arrow="down-5d5">↓</div>
+            </div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="level-name" data-shell="4">4f</div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="orbital" data-subshell="4f" data-orbital="4f1">
+                <div class="electron up-arrow" data-arrow="up-4f1">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4f1">↓</div>
+            </div>
+            <div class="orbital" data-subshell="4f" data-orbital="4f2">
+                <div class="electron up-arrow" data-arrow="up-4f2">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4f2">↓</div>
+            </div>
+            <div class="orbital" data-subshell="4f" data-orbital="4f3">
+                <div class="electron up-arrow" data-arrow="up-4f3">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4f3">↓</div>
+            </div>
+            <div class="orbital" data-subshell="4f" data-orbital="4f4">
+                <div class="electron up-arrow" data-arrow="up-4f4">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4f4">↓</div>
+            </div>
+            <div class="orbital" data-subshell="4f" data-orbital="4f5">
+                <div class="electron up-arrow" data-arrow="up-4f5">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4f5">↓</div>
+            </div>
+            <div class="orbital" data-subshell="4f" data-orbital="4f6">
+                <div class="electron up-arrow" data-arrow="up-4f6">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4f6">↓</div>
+            </div>
+            <div class="orbital" data-subshell="4f" data-orbital="4f7">
+                <div class="electron up-arrow" data-arrow="up-4f7">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4f7">↓</div>
+            </div>
+            <div class="level-name" data-shell="6">6s</div>
+            <div class="orbital" data-subshell="6s" data-orbital="6s1">
+                <div class="electron up-arrow" data-arrow="up-6s1">↑</div>
+                <div class="electron down-arrow" data-arrow="down-6s1">↓</div>
+            </div>            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="level-name" data-shell="5">5p</div>
+            <div class="empty-orbital"></div>
+            <div class="orbital" data-subshell="5p" data-orbital="5p1">
+                <div class="electron up-arrow" data-arrow="up-5p1">↑</div>
+                <div class="electron down-arrow" data-arrow="down-5p1">↓</div>
+            </div>
+            <div class="orbital" data-subshell="5p" data-orbital="5p2">
+                <div class="electron up-arrow" data-arrow="up-5p2">↑</div>
+                <div class="electron down-arrow" data-arrow="down-5p2">↓</div>
+            </div>
+            <div class="orbital" data-subshell="5p" data-orbital="5p3">
+                <div class="electron up-arrow" data-arrow="up-5p3">↑</div>
+                <div class="electron down-arrow" data-arrow="down-5p3">↓</div>
+            </div>            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="level-name" data-shell="4">4d</div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="orbital" data-subshell="4d" data-orbital="4d1">
+                <div class="electron up-arrow" data-arrow="up-4d1">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4d1">↓</div>
+            </div>
+            <div class="orbital" data-subshell="4d" data-orbital="4d2">
+                <div class="electron up-arrow" data-arrow="up-4d2">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4d2">↓</div>
+            </div>
+            <div class="orbital" data-subshell="4d" data-orbital="4d3">
+                <div class="electron up-arrow" data-arrow="up-4d3">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4d3">↓</div>
+            </div>
+            <div class="orbital" data-subshell="4d" data-orbital="4d4">
+                <div class="electron up-arrow" data-arrow="up-4d4">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4d4">↓</div>
+            </div>
+            <div class="orbital" data-subshell="4d" data-orbital="4d5">
+                <div class="electron up-arrow" data-arrow="up-4d5">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4d5">↓</div>
+            </div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="level-name" data-shell="5">5s</div>
+            <div class="orbital" data-subshell="5s" data-orbital="5s1">
+                <div class="electron up-arrow" data-arrow="up-5s1">↑</div>
+                <div class="electron down-arrow" data-arrow="down-5s1">↓</div>
+            </div>            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="level-name" data-shell="4">4p</div>
+            <div class="empty-orbital"></div>
+            <div class="orbital" data-subshell="4p" data-orbital="4p1">
+                <div class="electron up-arrow" data-arrow="up-4p1">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4p1">↓</div>
+            </div>
+            <div class="orbital" data-subshell="4p" data-orbital="4p2">
+                <div class="electron up-arrow" data-arrow="up-4p2">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4p2">↓</div>
+            </div>
+            <div class="orbital" data-subshell="4p" data-orbital="4p3">
+                <div class="electron up-arrow" data-arrow="up-4p3">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4p3">↓</div>
+            </div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="level-name" data-shell="3">3d</div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="orbital" data-subshell="3d" data-orbital="3d1">
+                <div class="electron up-arrow" data-arrow="up-3d1">↑</div>
+                <div class="electron down-arrow" data-arrow="down-3d1">↓</div>
+            </div>
+            <div class="orbital" data-subshell="3d" data-orbital="3d2">
+                <div class="electron up-arrow" data-arrow="up-3d2">↑</div>
+                <div class="electron down-arrow" data-arrow="down-3d2">↓</div>
+            </div>
+            <div class="orbital" data-subshell="3d" data-orbital="3d3">
+                <div class="electron up-arrow" data-arrow="up-3d3">↑</div>
+                <div class="electron down-arrow" data-arrow="down-3d3">↓</div>
+            </div>
+            <div class="orbital" data-subshell="3d" data-orbital="3d4">
+                <div class="electron up-arrow" data-arrow="up-3d4">↑</div>
+                <div class="electron down-arrow" data-arrow="down-3d4">↓</div>
+            </div>
+            <div class="orbital" data-subshell="3d" data-orbital="3d5">
+                <div class="electron up-arrow" data-arrow="up-3d5">↑</div>
+                <div class="electron down-arrow" data-arrow="down-3d5">↓</div>
+            </div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="level-name" data-shell="4">4s</div>
+            <div class="orbital" data-subshell="4s" data-orbital="4s1">
+                <div class="electron up-arrow" data-arrow="up-4s1">↑</div>
+                <div class="electron down-arrow" data-arrow="down-4s1">↓</div>
+            </div>            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="level-name" data-shell="3">3p</div>
+            <div class="empty-orbital"></div>
+            <div class="orbital" data-subshell="3p" data-orbital="3p1">
+                <div class="electron up-arrow" data-arrow="up-3p1">↑</div>
+                <div class="electron down-arrow" data-arrow="down-3p1">↓</div>
+            </div>
+            <div class="orbital" data-subshell="3p" data-orbital="3p2">
+                <div class="electron up-arrow" data-arrow="up-3p2">↑</div>
+                <div class="electron down-arrow" data-arrow="down-3p2">↓</div>
+            </div>
+            <div class="orbital" data-subshell="3p" data-orbital="3p3">
+                <div class="electron up-arrow" data-arrow="up-3p3">↑</div>
+                <div class="electron down-arrow" data-arrow="down-3p3">↓</div>
+            </div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="level-name" data-shell="3">3s</div>
+            <div class="orbital" data-subshell="3s" data-orbital="3s1">
+                <div class="electron up-arrow" data-arrow="up-3s1">↑</div>
+                <div class="electron down-arrow" data-arrow="down-3s1">↓</div>
+            </div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="level-name" data-shell="2">2p</div>
+            <div class="empty-orbital"></div>
+            <div class="orbital" data-subshell="2p" data-orbital="2p1">
+                <div class="electron up-arrow" data-arrow="up-2p1">↑</div>
+                <div class="electron down-arrow" data-arrow="down-2p1">↓</div>
+            </div>
+            <div class="orbital" data-subshell="2p" data-orbital="2p2">
+                <div class="electron up-arrow" data-arrow="up-2p2">↑</div>
+                <div class="electron down-arrow" data-arrow="down-2p2">↓</div>
+            </div>
+            <div class="orbital" data-subshell="2p" data-orbital="2p3">
+                <div class="electron up-arrow" data-arrow="up-2p3">↑</div>
+                <div class="electron down-arrow" data-arrow="down-2p3">↓</div>
+            </div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="level-name" data-shell="2">2s</div>
+            <div class="orbital" data-subshell="2s" data-orbital="2s1">
+                <div class="electron up-arrow" data-arrow="up-2s1">↑</div>
+                <div class="electron down-arrow" data-arrow="down-2s1">↓</div>
+            </div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="empty-orbital"></div>
+            <div class="level-name" data-shell="1">1s</div>
+            <div class="orbital" data-subshell="1s" data-orbital="1s1">
+                <div class="electron up-arrow" data-arrow="up-1s1">↑</div>
+                <div class="electron down-arrow" data-arrow="down-1s1">↓</div>
+            </div>
+        </div>
+        <div class="clear">Clear</div>
+        <div class="check">Check</div>
+        <div class="violation-container"><div class="violation-label">Violations</div><div class="violation-aufbau"></div><div class="violation-hunds"></div></div>
+
+        <span id="element-name">Element</span>
+        <span id="element-symbol">Symbol</span>
+        <span id="element-atomic-number">Atomic Number</span>
+        <span id="element-fact">Fact</span>
+        <span id="element-config" class="disabled">Electron Configuration</span>
+        <div class="condensed-container"><span class="name">Condensed</span></div>
+    </main>
+    <script src="js/builder.js"></script>
+</body>
+
+</html>

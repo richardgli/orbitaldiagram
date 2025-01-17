@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions | Orbitals</title>
+    <link rel="stylesheet" href="css/instructions.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><div class="back"><p>Back</p></div></a>
+    </header>
+
+    <main>
+        <span class="layout">General Layout of Builder</span>
+        <div class="element"><h1>Element Display</h1>
+            <p>The section at the top-left displays general information about the element that is selected by the user in the other two sections. The element symbol is displayed in bold text at the top-left corner. The atomic number of the corresponding element is displayed to the right of the symbol. Underneath, a short description of the element is given, along with the electron configuration.
+            <br>
+            <br>
+            <p>To condense the electron configuration, the button named “Condensed” must be clicked.</p>
+            <br>
+            <p>Green = Condensed</p>
+            <p>Red = Complete</p>
+            </p>
+            <br>
+            <img src="/img/datadisplay.png" alt="Data Display"  class="data">
+        </div>
+        <br>
+        <div class="table"><h1>Periodic Table</h1>
+            <p>The periodic table is a completely interactive table.</p>
+
+            <p>Each element up to Radon can be clicked. As the cursor hovers over, the element pops out and is highlighted.</p>
+            <br>
+            <p>Yellow Highlight = Element is able to be clicked. (Atomic #1-86)</p>
+            <p>Red Highlight = Element is not able to be clicked. (Atomic #87+)</p>
+            <br>
+            <p>The clicked elements’ general information will be displayed in the display section. The orbital shells will be automatically filled to match the element that was clicked.
+            </p>
+            <img src="/img/periodictable.png" alt="Image of Periodic Table" class="table">
+        </div>
+        <br>
+        <br>
+
+        <div class="orbital"><h1>Orbital Shell Sandbox</h1>
+            <p>The section on the left is the orbital shell sandbox. Here, the shells will be filled with electrons if an element on the periodic table is clicked.</p>
+            <p>The shells go up to 6p6 and the orbitals go up to the f shell.</p>
+            <br>
+            <p>If the user chooses to build their own diagram, there is a clear button at the bottom left, highlighted in red.</p>
+            <br>
+            <p>As the user builds, the shells pop out as the mouse hovers over them. 
+            </p>
+            <br>
+            <p>One click = Up arrow</p>
+            <p>Two clicks = Up arrow and down arrow</p>
+            <p>Three clicks = Clears the orbital</p>
+            <br>
+            <p>When the user is finished, they can click a “check” button highlighted in green at the bottom of the screen. The check button has two functions:</p>
+            <br>
+            <p>1. Once pressed, the button will update the element description on the top-left of the screen to the element that the user built only if the user built it correctly.
+            The check button updates the “violations” section to notify the user if their orbital diagram is proper and does not violate any principles.</p>
+            <br>
+            <p>2. The “violations” box will display any violation to the fundamental orbital principles that the user commits when pressing check. If the user is correct in building any of the elements, the violation will tell the user that they are correct.</p>
+            <img src="/img/orbitaldiagram.png" alt="Orbital Diagram" class="orbital">
+        </div>        
+        <br>
+        <span class="principles">Three Principles of Orbital Diagrams</span>
+        <div class="Pauli"><h1>Pauli Exclusion Principle</h1>
+            <p>The Pauli Exclusion Principle states that, in an atom or molecule, no two electrons can spin towards the same direction. Orbitals can contain a max of two electrons, and the electrons MUST have opposing spins. This means if one electron spins upwards, the other electron must spin downwards.</p>
+        </div>
+        <br>
+        <div class="Hunds"><h1>Hund's Rule</h1>
+            <p>Hund’s Rule explains that before the double occupation of any orbital, every orbital in the sub level is singly occupied. For the maximization of total spin, all electrons in a single occupancy orbital have the same spin.</p>
+        </div>
+        <br>
+        <br>
+        <div class="Aufbau"><h1>Aufbau Principle</h1>
+            <p>Aufbau’s principle states that electrons will occupy the subshells from lowest to highest energy. </p>
+        </div>   
+    </main>
+</body>
+
+</html>

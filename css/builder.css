@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+:root{
+    --main-bg-color: #264653;
+    --secondary-color: #2a9d8f;
+    --tertiary-color: #e76f51;
+    
+    --text-color: #e9c46a;
+    --secondary-text-color: #f4a261;
+    
+    --font-family: 'Caveat Brush', sans-serif;
+    
+    --first-level-color: red;
+    --second-level-color: orange;
+    --third-level-color: yellow;
+    --fourth-level-color: green;
+    --fifth-level-color: blue;
+    --sixth-level-color: purple;
+
+    --s-color: rgb(242, 67, 102);
+    --p-color: rgb(255, 210, 106);
+    --d-color: rgb(129, 231, 81);
+    --f-color: rgb(105, 161, 246);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+}
+
+body{
+    font-family: var(--font-family);
+}
+
+.back{
+    width: 5%;
+    height: 5%;
+    background-color: var(--tertiary-color);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.25% 0.25% 0 0;
+    z-index: 2;
+    user-select: none;
+    transition: right 0.25s ease-in-out,
+                background-color 0.25s ease-in-out;
+    color: black;
+}
+
+.back:hover{
+    right: 0.75%;
+    background-color: var(--text-color);
+}
+
+.back p{
+    background-color: transparent;
+    left: 40%;
+    position: absolute;
+}
+
+.periodic-table{
+    margin: 0 0 1% 1%;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    position: absolute;
+    overflow: visible;
+    bottom: 0;
+    text-align: center;
+}
+
+.element{
+    margin: 0;
+    justify-content: center;
+    color: white;
+    transition: color 0.25s ease-in-out,
+                transform .25s ease-in-out,
+                box-shadow .25s ease-in-out;
+    display: block;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+}
+
+.element p{
+    font-size: 100%;
+    background-color: var(--secondary-color);
+    user-select: none;
+}
+
+.element h4{
+    font-size: 75%;
+    background-color: var(--secondary-color);
+    border-bottom: 13% solid black;
+    user-select: none;
+}
+
+.element:hover{
+    color: var(--text-color);
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 1px 1px 20px var(--text-color);
+}
+
+.restricted:hover{
+    color: red;
+    box-shadow: 1px 1px 20px red;
+}
+
+.empty-element{
+    height: 10px;
+    width: 30px;
+    background-color: transparent;
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.orbital-diagram{
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    row-gap: 5px;
+    column-gap: 2px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    right: 1.5rem;
+    height: 95%;
+    margin: 0 4% 1% 0;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px black;
+    text-align: center;
+}
+
+.empty-orbital{
+    background-color: var(--secondary-color);
+    width: 30px;
+    height: 30px;
+}
+
+.level-name{
+    background-color: var(--tertiary-color);
+    width: 67.5%;
+    height: 67.5%;
+    border-radius: 50%;
+    transition: transform .1s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+}
+
+.level-name:hover{
+    transform: scale(1.2);
+}
+
+div[data-shell="1"]{
+    background-color: var(--first-level-color);
+    box-shadow: 1px 1px 5px black;
+}
+
+div[data-shell="2"]{
+    background-color: var(--second-level-color);
+    box-shadow: 1px 1px 5px black;
+}
+
+div[data-shell="3"]{
+    background-color: var(--third-level-color);
+    box-shadow: 1px 1px 5px black;
+}
+
+div[data-shell="4"]{
+    background-color: var(--fourth-level-color);
+    box-shadow: 1px 1px 5px black;
+}
+
+div[data-shell="5"]{
+    background-color: var(--fifth-level-color);
+    box-shadow: 1px 1px 5px black;
+}
+
+div[data-shell="6"]{
+    background-color: var(--sixth-level-color);
+    box-shadow: 1px 1px 5px black;
+}
+
+.subshell-name{
+    height: 80%;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.subshell-name p{
+    text-align: center;
+    background: transparent;
+    color: white;
+}
+
+div[data-subshell-name="s"]{
+    background-color: var(--s-color);
+}
+
+div[data-subshell-name="p"]{
+    background-color: var(--p-color);
+}
+
+div[data-subshell-name="d"]{
+    background-color: var(--d-color);
+}
+
+div[data-subshell-name="f"]{
+    background-color: var(--f-color);
+}
+
+.orbital{
+    background-color: var(--secondary-color);
+    box-shadow: 0 1px black;
+    width: 20px;
+    height: 20px;
+    transition: box-shadow .25s ease-in-out,
+                transform .25s ease-in-out;
+}
+
+.orbital:hover{
+    box-shadow: 1px 1px 10px var(--main-bg-color);
+    transform: scale(1.2);
+    cursor: pointer;
+} 
+
+.orbital .electron{
+    visibility: hidden;
+    width: 10px;
+    height: 0;
+    background-color: transparent;
+    user-select: none;
+    z-index: 1;
+    position: absolute;
+}
+
+.orbital .down-arrow{
+    display: inline-flex;
+}
+
+.orbital .show-electron{
+    visibility: visible;
+}
+
+.clear{
+    background-color: var(--tertiary-color);
+    text-align: center;
+    width: 4%;
+    height: 4.5%;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 3%;
+    right: 6.25%;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    box-shadow: 1px 1px 5px black;
+    transition: transform 0.25s ease-in-out,
+                background-color 0.25s ease-in-out;
+}
+
+.clear:hover{
+    transform: scale(1.1);
+    background-color: var(--secondary-text-color);
+}
+
+#element-name,
+#element-symbol,
+#element-atomic-number,
+#element-fact,
+#element-config{
+    background-color: transparent;
+    color: white;
+    left: 0;
+    display: block;
+    user-select: none;
+    margin: 0 0 0 0.5%;
+}
+
+#element-name{
+    height: 5%;
+    width: 6.3%;
+    overflow-y: hidden;
+    top: 0.75%;
+    left: 0.75%;
+    position: absolute;
+    font-size: 17.5px;
+}
+
+#element-symbol{
+    font-size: 500%;
+    width: 5%;
+    margin-top: 0.5%;
+}
+
+#element-atomic-number{
+    display: inline-flex;
+    font-size: 150%;
+    left: 20%;
+    top: 7%;
+    width: 17.5%;
+    position: absolute;
+}
+
+#element-fact{
+    width: 45%;
+    font-size: 17.5px;
+}
+
+#element-config{
+    width: 50%;
+    position: absolute;
+    top: 32.5%;
+}
+
+.condensed-container{
+    background-color: red;
+    width: 5.5%;
+    height: 3.5%;
+    cursor: pointer;
+    left: 0.5%;
+    border-radius: 5px;
+    position: absolute;
+    top: 36.5%;
+    text-align: center;
+    transition: transform 0.2s ease-in-out,
+                background-color 0.2s ease-in-out;
+    user-select: none;
+}
+
+.condensed-container:hover{
+    transform: scale(1.2);
+    background-color: rgb(255, 78, 78);
+}
+
+.condensed-container .name{
+    background-color: transparent;
+    color: white;
+}
+
+.condensed-container.enabled{   
+    background-color: green;
+    transition: transform 0.2s ease-in-out,
+                background-color 0.2s ease-in-out;
+}
+
+.condensed-container.enabled:hover{
+    background-color: rgb(7, 206, 7);
+}
+
+.check{
+    background-color: rgb(12, 195, 12);
+    text-align: center;
+    width: 8%;
+    height: 4.5%;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 3%;
+    right: 25%;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    box-shadow: 1px 1px 5px black;
+    transition: transform 0.25s ease-in-out,
+                background-color 0.25s ease-in-out;
+}
+
+.check:hover{
+    transform: scale(1.1);
+    background-color: rgb(40, 240, 40);
+}
+
+.violation-container{
+    background-color: crimson;
+    text-align: center;
+    width: 25%;
+    height: 25%;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    overflow: hidden;
+    color: white;
+    box-shadow: 1px 1px 5px black;
+}
+
+.violation-container .violation-aufbau,
+.violation-container .violation-hunds{
+    background-color: crimson;
+}
